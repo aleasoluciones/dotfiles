@@ -37,7 +37,7 @@ let g:go_fmt_command = "goimports"
 " Remove all trailing spaces on save
 " http://vimcasts.org/episodes/tidying-whitespace
 function! Preserve(command)
-    let _s=@/¬
+    let _s=@/
     let l = line(".")
     let c = col(".")
     execute a:command
