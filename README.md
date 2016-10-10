@@ -22,3 +22,6 @@ vagrant up
 vagrant ssh
 /vagrant/setup.sh
 ```
+
+##Git hooks
+`cp ./git_hooks/* <your_repo>/.git/hooks/`
