@@ -1,0 +1,7 @@
+*.iml
+*.floo
+*.flooignore
+
+/src
+
+*.swp

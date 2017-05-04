@@ -1,0 +1,17 @@
+#/bin/bash
+
+if [ $# -eq 0 ]; then
+    echo "Please, give a script to execute as parameter."
+    echo "    Ex: $(basename $0) ./bin/all-tests.sh"
+    exit 1
+fi
+
+#if [ "$(which inotifywait)" == "" ]; then
+#    echo "Installing inotify-tools..."
+#    sudo apt-get install -y inotify-tools >/dev/null
+#fi
+
+echo "Start watching current dir..."
+while true; do
+    inotifywait -r --exclude "(\.git|.*cache.*|.*pyc)" -e modify,attrib,close_write,move,create,delete ./ 2>/dev/null && $1
+done

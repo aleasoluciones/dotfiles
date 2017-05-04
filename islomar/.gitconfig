@@ -1,0 +1,14 @@
+[user]
+	name = Isidro López
+	email = islomar@gmail.com
+[push]
+	default = simple
+[core]
+	excludesfile = /home/islomar/.gitignore_global
+	editor = vim
+[webui]
+	autoupdate = true
+[alias]
+	webui = !/home/islomar/.git-webui/release/libexec/git-core/git-webui
+[hub]
+	protocol = https
