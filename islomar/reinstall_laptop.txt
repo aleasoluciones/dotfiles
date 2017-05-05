@@ -1,0 +1,122 @@
+sudo apt-get update 
+sudo apt-get upgrade -y
+
+# Install Chrome
+wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add - 
+
+sudo sh -c 'echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google.list'
+
+sudo apt-get install google-chrome-stable -y
+
+
+# Añadir repos de Alea
+cat /etc/apt/sources.list.d/alea.list 
+##Repos Alea
+deb http://deb.alea-soluciones.com/bos-repo-desktop/ binary/
+deb http://deb.alea-soluciones.com/bos-repo/ binary/
+
+
+sudo apt-get install slack-desktop -y
+
+sudo apt-get install --no-install-recommends gnome-panel -y
+gnome-desktop-item-edit ~/Desktop/ --create-new
+
+# SoapUI
+https://www.soapui.org/downloads/soapui.html
+
+sudo apt install git -y
+
+sudo apt install subversion -y
+
+# Java 8 en Ubuntu
+https://www.digitalocean.com/community/tutorials/como-instalar-java-con-apt-get-en-ubuntu-16-04-es
+sudo apt-get install default-jre -y
+
+sudo apt install docker.io -y
+sudo apt install wireshark -y
+
+# Visual Studio Code
+https://code.visualstudio.com/docs/setup/linux
+
+sudo apt-get install -f
+
+# Sublime 3
+http://www.sublimetext.com/3
+
+sudo apt install tkmib -y
+sudo apt-get install snmp
+sudo apt install python-pip -y
+sudo apt-get install virtualenv python-virtualenv -y
+sudo pip install virtualenvwrapper
+pip install --upgrade pip
+sudo apt install silversearcher-ag -y
+
+# Redis Desktop Manager
+sudo apt install zlibc libicu-dev icu-devtools
+https://redisdesktop.com/subscriptions/downloads/0.8.8/redis-desktop-manager_0.8.8.19_amd64.deb
+
+#Sonar-scanner
+https://docs.sonarqube.org/display/SCAN/Analyzing+with+SonarQube+Scanner
+
+sudo apt install npm
+#Install yarn
+pip install mamba
+
+sudo apt-get install libmysqlclient-dev
+sudo apt-get install libpq-dev python-dev -y
+
+# Install docker-compose
+
+https://askubuntu.com/questions/477551/how-can-i-use-docker-without-sudo >> hay que salir después
+
+sudo apt install tree
+sudo apt install golang-go
+go get github.com/tools/godep
+
+apt-get --yes autoremove --purge
+apt-get autoclean
+
+sudo apt-get update && sudo apt-get install aleacli
+
+sudo apt install zsh
+
+
+#Git clones
+## Python
+git clone git@github.com:aleasoluciones/infsnmp.git
+git clone git@github.com:aleasoluciones/infrabbitmq.git
+git clone https://github.com/aleasoluciones/dotfiles.git
+git clone https://github.com/aleasoluciones/felix.git
+git clone https://github.com/aleasoluciones/aleacli.git
+git clone git@github.com:aleasoluciones/felix.git
+git clone git@github.com:aleasoluciones/boscli.git
+git clone git@github.com:aleasoluciones/puppet3.git
+git clone git@github.com:aleasoluciones/puppet.git
+git clone git@github.com:aleasoluciones/inffelix.git
+git clone git@github.com:aleasoluciones/boscli.git
+git clone git@github.com:aleasoluciones/puppet3.git
+git clone git@github.com:aleasoluciones/puppet.git
+git clone git@github.com:aleasoluciones/huaweiolt_provision.git
+git clone git@github.com:aleasoluciones/issues.git
+git clone git@github.com:aleasoluciones/configurations.git
+git clone git@github.com:aleasoluciones/inventory.git
+git clone git@github.com:aleasoluciones/felixlogs.git
+git clone git@github.com:aleasoluciones/felixcpesearch.git
+git clone git@github.com:aleasoluciones/goryman.git
+git clone git@github.com:aleasoluciones/gochecks.git
+git clone git@github.com:aleasoluciones/netagent.git
+git clone git@github.com:aleasoluciones/leasessearch.git
+git clone git@github.com:aleasoluciones/felixeventrouter.git
+
+
+## Go
+git clone git@github.com:aleasoluciones/felixcpesearch.git
+git clone git@github.com:aleasoluciones/amievents2amqp.git
+git clone git@github.com:aleasoluciones/huaweiolt_monitor.git
+git clone git@github.com:aleasoluciones/http2amqp.git
+git clone git@github.com:aleasoluciones/simpleamqp.git
+git clone git@github.com:aleasoluciones/goaleasoluciones.git
+git clone git@github.com:aleasoluciones/gosnmpquerier.git
+git clone git@github.com:aleasoluciones/http2snmp.git
+git clone git@github.com:aleasoluciones/gosnmp.git
+git clone git@github.com:aleasoluciones/amqp.git
