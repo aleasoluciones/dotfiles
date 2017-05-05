@@ -112,11 +112,12 @@ fi
 
 export WORKON_HOME=~/virtualenvs
 export PIP_VIRTUALENV_BASE=~/virtualenvs
+export VIRTUALENVWRAPPER_PYTHON=$(which python)
 export VIRTUALENVWRAPPER_VIRTUALENV=/usr/local/bin/virtualenv
 source /usr/local/bin/virtualenvwrapper.sh
 
 export GOPATH=$HOME/workspace/go
-export PATH=/usr/local/go/bin:~/scripts/:$PATH:~/apps/sonar-scanner-2.8/bin
+export PATH=/usr/local/go/bin:~/scripts/:$PATH:~/apps/sonar-scanner-3.0.1.733-linux/bin
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="/home/islomar/.sdkman"
