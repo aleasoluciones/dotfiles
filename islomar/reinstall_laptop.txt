@@ -78,7 +78,9 @@ apt-get autoclean
 
 sudo apt-get update && sudo apt-get install aleacli
 
+# Instalar zsh
 sudo apt install zsh
+https://github.com/robbyrussell/oh-my-zsh/wiki/Installing-ZSH
 
 
 #Git clones
