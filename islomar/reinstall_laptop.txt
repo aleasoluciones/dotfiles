@@ -1,8 +1,8 @@
-sudo apt-get update 
+sudo apt-get update
 sudo apt-get upgrade -y
 
 # Install Chrome
-wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add - 
+wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
 
 sudo sh -c 'echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google.list'
 
@@ -10,7 +10,7 @@ sudo apt-get install google-chrome-stable -y
 
 
 # Añadir repos de Alea
-cat /etc/apt/sources.list.d/alea.list 
+cat /etc/apt/sources.list.d/alea.list
 ##Repos Alea
 deb http://deb.alea-soluciones.com/bos-repo-desktop/ binary/
 deb http://deb.alea-soluciones.com/bos-repo/ binary/
@@ -64,6 +64,11 @@ pip install mamba
 
 sudo apt-get install libmysqlclient-dev
 sudo apt-get install libpq-dev python-dev -y
+
+# vim
+sudo apt install vim
+Copiar el vimrc de dotfiles
+Instalar los plugins: https://voragine.net/linux/instalar-vundle-gestor-modulos-vim
 
 # Install docker-compose
 
