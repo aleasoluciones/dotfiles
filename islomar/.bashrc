@@ -111,9 +111,6 @@ fi
 
 
 export WORKON_HOME=~/virtualenvs
-export PIP_VIRTUALENV_BASE=~/virtualenvs
-export VIRTUALENVWRAPPER_PYTHON=$(which python)
-export VIRTUALENVWRAPPER_VIRTUALENV=/usr/local/bin/virtualenv
 source /usr/local/bin/virtualenvwrapper.sh
 
 export GOPATH=$HOME/workspace/go
