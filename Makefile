@@ -16,11 +16,11 @@ tmate_exec:
 
 tmate: tmate_exec
 
-vim_execution:
+vim_exec:
 	@./vim/installation.sh
 
-vim: vim_execution
+vim: vim_exec
 
-all: tmax_exec vim_exec
+all: tmate_exec vim_exec
 
 .PHONY: default tmate vim all
