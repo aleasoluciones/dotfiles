@@ -1,7 +1,7 @@
 """"""""""""""""""""""
 " conventions source "
 """"""""""""""""""""""
-https://soporte.alea-soluciones.com/a/solutions/articles/12000075675
+" https://soporte.alea-soluciones.com/a/solutions/articles/12000075675
 
 
 """"""""""""""""""""""""
@@ -67,6 +67,7 @@ call vundle#end()
 
 " NERDTree
 map <C-x> :NERDTreeToggle<CR> " Open the filesystem tree with Ctrl+X
+nnoremap <C-f> :NERDTreeFind<CR>
 nnoremap <Leader>s :NERDTreeFind<Enter> " Open the filesystem tree at the same level of current file
 let NERDTreeIgnore = ['\.pyc$', '\.orig$', '\.egg-info', '__pycache__', '\.sw*$'] " Ignore pyc files
 let NERDTreeShowHidden=1
