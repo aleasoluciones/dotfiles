@@ -1,0 +1,1 @@
+alias vimfer='vim -Nu /path/to/team/conventions/vimrc'
