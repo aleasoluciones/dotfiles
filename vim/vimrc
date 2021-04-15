@@ -66,9 +66,9 @@ call vundle#end()
 """""""""""""""""""""""""
 
 " NERDTree
-map <C-x> :NERDTreeToggle<CR> " Open the filesystem tree with Ctrl+X
+map <C-x> :NERDTreeToggle<CR>
 nnoremap <C-f> :NERDTreeFind<CR>
-nnoremap <Leader>s :NERDTreeFind<Enter> " Open the filesystem tree at the same level of current file
+nnoremap <Leader>s :NERDTreeFind<CR>
 let NERDTreeIgnore = ['\.pyc$', '\.orig$', '\.egg-info', '__pycache__', '\.sw*$', '\.swp'] " Ignore files
 let NERDTreeShowHidden=1
 
